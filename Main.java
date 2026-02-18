@@ -9,11 +9,11 @@ public class Main {
         Room room202 = new Room("Room 202", 6);
 
         // Create at least 5 reservations across different rooms and time slots
-        manager.createReservation(room101, "Reece", new TimeSlot(9));   // ID 1
-        manager.createReservation(room101, "Alex", new TimeSlot(10));  // ID 2
-        manager.createReservation(room202, "Jordan", new TimeSlot(9)); // ID 3
-        manager.createReservation(room202, "Taylor", new TimeSlot(13));// ID 4
-        manager.createReservation(room101, "Morgan", new TimeSlot(14));// ID 5
+        manager.createReservation(room101, "Reece", new TimeSlot(9));  
+        manager.createReservation(room101, "Alex", new TimeSlot(10));  
+        manager.createReservation(room202, "Jordan", new TimeSlot(9));
+        manager.createReservation(room202, "Taylor", new TimeSlot(13));
+        manager.createReservation(room101, "Morgan", new TimeSlot(14));
 
         // Cancel at least 1 reservation
         manager.cancelReservation(2);
@@ -29,4 +29,5 @@ public class Main {
         System.out.println("\n=== RESERVATIONS FOR " + room101 + " ===");
         manager.printReservationsForRoom(room101);
     }
+
 }
